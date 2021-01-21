@@ -85,7 +85,7 @@ W3C가 xhtml은 데이터를 어찌 구조화 할가가 고민인 거다. 그 �
 
 ---
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/105342208-7155ef00-5c23-11eb-9a2f-61255f76b541.png)
 
 일반 c/s프로그램은 각각 Client, Server가 있어야 하고 1차 버전 → 2차 버전으로 업그레이드 돼야 한다 하면 프로그램의 기능이 더 추가된다 즉 컴퓨터의 자원을 많이 사용한다. c/s프로그램은 무거워지면 제대로 실행이 안 될 수 있다. 이런 것을 FAT Client라 부른다.
 
@@ -105,13 +105,13 @@ Rendering engine(=브라우저 엔진)놈은 WebBrowser에 내장이 되어있�
 
 웹 브라우저 내에 있는 html, css 는 렌더링 엔진이 처리하고 Js는 js해석기에서 할 거다.
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%201.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/105342215-72871c00-5c23-11eb-9f3e-5f8bd6f87d33.png)
 
 file프로토콜 사용
 
 인터넷 사용 X ex) 스마트TV, 냉장고
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%202.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/105342218-731fb280-5c23-11eb-8b56-c6cb2d193422.png)
 
 다른 컴퓨터 서버에 있는 자원을 사용하려면 http프로토콜을 사용
 
@@ -123,19 +123,19 @@ file프로토콜 사용
 
  apche검색 후[https://www.apache.org/](https://www.apache.org/)  사이트로 들어가서 먼저 Version 확인
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%203.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/105342219-73b84900-5c23-11eb-8890-221aaae7b818.png)
 
 지금 설치되어 있는 자바 버전이 8버전 이므로 Apache Tomcat9버전을 깔자
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%204.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/105342220-73b84900-5c23-11eb-9aa5-3d341de02e7f.png)
 
 안전하게 zip형태로 다운 받자
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%205.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/105342223-7450df80-5c23-11eb-81c7-50ec40d2ce34.png)
 
 SW에 파일을 넣어주자
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%206.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%206.png)
+![7](https://user-images.githubusercontent.com/63957819/105342227-7450df80-5c23-11eb-9ff8-d17daa497bde.png)
 
 bin디렉토리 안에 startup.bat실행
 
@@ -145,23 +145,23 @@ Open Perspective클릭해서 Java EE로 바꾸자
 
 Window> Preferences> Web> CSS Files, HTML, JSP 다 UTF-8로 설정
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%207.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%207.png)
+![8](https://user-images.githubusercontent.com/63957819/105342228-74e97600-5c23-11eb-9f52-555e0d3535c3.png)
 
 Servers 클릭> 밑에 No servers are~ 클릭
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%208.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%208.png)
+![9](https://user-images.githubusercontent.com/63957819/105342229-74e97600-5c23-11eb-80ff-eeaea39b94c8.png)
 
 설치한 Tomcat 9버전 선택 후 Next
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%209.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%209.png)
+![10](https://user-images.githubusercontent.com/63957819/105342231-75820c80-5c23-11eb-8dca-94513dccf667.png)
 
 bin디렉토리를 포함하고 있는 파일이 경로가 되도록 해야 한다. Next 후 Finish하자
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%2010.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%2010.png)
+![11](https://user-images.githubusercontent.com/63957819/105342234-75820c80-5c23-11eb-8acf-5954b813b5ee.png)
 
 TomcatServer 더블클릭
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%2011.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%2011.png)
+![12](https://user-images.githubusercontent.com/63957819/105342235-761aa300-5c23-11eb-9cbe-3dacf91dc957.png)
 
 Http 포트번호를 8888로 바꾸자
 
@@ -169,6 +169,6 @@ Server Locations에서 두 번째 항목으로 체크. 즉 직접 운영서버�
 
 원래는 첫 번째 항목인 테스트 서버로 만들어야 한다. 그러나 수업 시간에는 운영 서버와 테스트 서버를 같이 두자 
 
-![day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%2012.png](day01%20ee858d50c5b44778bdc4752d061a1a6a/Untitled%2012.png)
+![13](https://user-images.githubusercontent.com/63957819/105342236-761aa300-5c23-11eb-9641-47f5d2a61ea7.png)
 
 저장하고 나서 TomcatServer 오른쪽 클릭 start 실행 시켜준다.
