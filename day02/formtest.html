@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>입력양식 실습</title>
+    </head>
+    <body>
+        <form method="GET" action="http://www.naver.com"> <!-- <form>과 같음-->
+            <label>text: <input type="text" name="t" value="test"></label><br> <!--기본값을 보여주려면 value값을 쓰면된다.--> <!--label은 text클릭시 input태그로 커서가 이동하게 해준다. -->
+            <label>password: <input type="password" name="p" value="p"></label><br>
+            <fieldset> <!-- fiedlset 태그는 입력 양식들을 묶음처리 Grouping-->
+            <legend>다중선택</legend> <!--legend 태그는 title역할을 해줌-->    
+                <label><input type="checkbox" name="c" value="c1" checked>ONE&nbsp&nbsp</label><!--checkbox는 다중 선택의 의미를 담고 있다-->
+                <label><input type="checkbox" name="c" value="c2">TWO&nbsp&nbsp</label>
+                <label><input type="checkbox" name="c" value="c3" checked>THREE</label> <!--checked="checked" 경우에 chekced는 속성명과 속성값이 같기 때문에 속성명만 적어줘도 된다-->
+            </fieldset>
+            <fieldset>
+            <legend>단일선택</legend>
+                <label><input type="radio" name="r" value="r1">ONE&nbsp;&nbsp;</label> <!--radio는 단일 선택의 의미만 담고있다.-->
+                <label><input type="radio" name="r" value="r2">TWO&nbsp;&nbsp;</label>
+                <label><input type="radio" name="r" value="r3" checked>THREE</label>
+            </fieldset>
+            <input type="hidden" name="h" value="hvalue"> <!--hidden은 브라우저에 보이지는 않지만 전달될 때 hidden에 해당하는 이름과 값은 제출이 된다-->
+            
+            <select><!--select 태그는 값을 선택할 때 사용. 하위태그로 option을 갖는다-->
+                <option>ONE</option>
+                <option>TWO</option>
+                <option selected>THREE</option>
+            </select>
+<textarea rows="3" cols="10">
+ABCDEFGHIGKLMNO
+PQRSTUVWXYZ
+</textarea><!--textarea는 여러 줄 입력가능.-->
+            <input type="submit">
+        </form>
+
+        <hr>
+        <h1>HTML5에서 제공하는 TYPE속성값들</h1>
+        <form>
+            <input type="number" value="5" step="2"> <!--기본값을 5로하고 2씩 증가 되도록-->
+            <input type="tel" value="01012345678">
+            <input type="search"> <!--search는 작은 device에서 쉽게 제거할수 있도록 제공-->
+            <input type="date">
+            <input type ="range"> <!--range는 값의 범위를 조절을 제공-->
+            <input type="url">
+        </form>
+
+        <hr>
+        <h1>HTML5에서 제공하는 input태그의 속성들</h1>
+        <form action="http://www.naver.com" autocomplete="off"> <!--보안상 자동 완성 기능을 키면 안되는데 끄는 게 autocomplete이다.-->
+            <input type="text" placeholder="아이디"> <!--placeholder는 도움말, 힌트를 주는 속성.-->
+            <input type="text" placeholder="카드번호" name="no"> <!--각 태그별 autocomplete="off"가능-->
+            <input type="text" value="읽기전용" readonly> <!--readonly는 읽기전용-->
+            <input type="text" value="비활성화" disabled> <!--disabled는 비활성화. 이전버전에서 제공 됨-->
+            <input type="submit">
+        </form>
+
+        <input name="test" value="outofform" form="f1"> <!--input요소가 form태그의 안쪽으로 옮겨지는 효과가 난다-->
+        <form id="f1" action="http://www.naver.com">
+            <input type="submit">
+        </form>
+    </body>
+</html>

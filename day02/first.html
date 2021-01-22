@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제목</title>
+    </head>
+    <body>
+        <h1 id="first">WELCOME!~</h1>  <!--속성값은 대소문자 구분해야한다.-->
+        <hr>
+        <h6>Yaeman</h6>'s WebPage
+        <p id="second"
+           style="border: 1px;border-style: solid;border-color:brown; width: 300px;"></p>
+        >HTML, CSS, JS는 FrontEND기술입니다.<br>
+            HTML은 데이터<br>
+            CSS는 표현<br>
+            JS는 기능을 담당한다.
+        </p>
+        <p id="third">
+            <h3>JSP, Servlet은 BackEND기술입니다.</h3>
+            JSP는 JavaServerPage로서 ASP와 비슷<br>
+            Servlet은 Java언어 기반이다
+        </p>
+
+        <p>
+            <a href="http://www.naver.com">네이버</a>&nbsp;&nbsp;&nbsp;
+            <a href="http://www.daum.com">다음</a>&nbsp;&nbsp;&nbsp;
+            <a href="http://www.google.com">구글</a>
+            <hr>
+            <a href="./sub.html">SUB</a> <!--./는 같은경로라 보면된다. 상대경로 활용: .현재경로, ..상위경로-->
+            <hr>
+            <a href="#first">TOP</a>&nbsp;&nbsp;&nbsp; <!--같은 PAGE의 특정 영역으로 이동 id속성 활용 : #. #은 id값을 의미한다. 같은 문서에 있는 id가 first영역으로 이동하라-->
+            <a href="#second">FRONT END</a>&nbsp;&nbsp;&nbsp;
+            <a href="#third">BACK END</a>
+        </p>
+
+        <p>
+            <ol> <!--ordered list: 순서있는 목록-->
+                <li>아반테</li> <!--list item: 목록의 아이템-->
+                <li>소나타</li>
+                <li>그랜저</li>
+            </ol>
+
+            <ul> <!--unordered list: 번호가 없는 태그-->
+                <li>아반테</li>
+                <li>소나타</li>
+                <li>그랜저</li>
+            </ul>
+
+            <p>
+                <table border="1" width="500" height="700"> <!--표에 관련된 태그-->
+                    <!-- <thead> -->
+                        <tr> <!--table row: 행-->
+                            <td>상품번호</td><td>상품명</td><td>가격</td> <!--td: 열-->
+                        </tr>
+                    <!-- </thead> -->
+                    <!-- <tbody> -->
+                        <tr><td>1</td><td>아메리카노</td>           <td>1000</td></tr>
+                        <tr><td>2</td><td>아이스아메리카노</td>     <td>1000</td></tr>
+                        <tr><td>3</td><td>라테</td>                 <td>1500</td></tr>
+                        <tr><td>4</td><td>아이스라테                </td><td>1500</td></tr>
+                        <tr><td rowspan="2">5</td> <!--rowsapn: 행 결합-->
+                                       <td>오렌지 쥬스</td>         <td>2000</td></tr>
+                        <tr>           <td>오렌지 쥬스
+                                           얼음추가</td>            <td>2500</td></tr>
+                    <!-- </tbody> -->
+                    <!--<tfoot> --> <!--꼬릿말의 역할-->
+                        <!-- <tr><td> </td><td>          </td><td>총액:5000</td></tr> -->
+                        <tr><td colspan="3">총액 : 5000</td><tr> <!--colspan: 열 결합-->        
+                    <!-- </tfoot> -->
+                </table>
+            </p>
+            <p>
+                <img src="./images/movie_image.jpg" alt="빅풋 주니어2: 패밀리가 떴다"><br> <!--src는 이미지의 resource를 넣어준다. alt속성값은 웹 접근성을 위해 반드시 필요-->
+                <img src="./images/movie_image.jpg" 
+                     alt="빅풋 주니어2: 패밀리가 떴다"
+                     width="200"
+                     height="300"        
+                ><br>
+                <img src="./images/movie_image.jpg" 
+                     alt="빅풋 주니어2: 패밀리가 떴다"
+                     width="200"        
+                >
+                <img src="https://movie-phinf.pstatic.net/20210107_160/1609984702837oNdmw_JPEG/movie_image.jpg" 
+                     alt="소울"
+                >
+            </p>
+        </p>
+    </body>
+</html>
