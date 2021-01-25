@@ -39,11 +39,11 @@ width, hegitht속성은 table, img태그에만 쓰되 다른 태그에서 쓰려
 </html>
 ```
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/105680163-b6836500-5f32-11eb-997f-a110979ac863.png)
 
 DIV1 검사하면 블록 요소인 것을 확인 할 수 있다.
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%201.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/105680169-b7b49200-5f32-11eb-9ba6-c8ca82f703ee.png)
 
 다른 요소 사이의 간격 설정을 할 수 있는데 그것을 마진이라 한다.
 
@@ -143,21 +143,21 @@ DIV1 검사하면 블록 요소인 것을 확인 할 수 있다.
 
 아이디 속성은 중복되지 않은 값으로 할당되어야 한다.
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%202.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/105680172-b84d2880-5f32-11eb-842c-0be841c464c0.png)
 
 name속성은 서버로 제출하는 용도, 제출하지 않으려면 안 적으면 된다.class 속성은 css 관련된 속성이고 id속성도 css와 관련이 있지만 js와도 관련이 많다.
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%203.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/105680174-b84d2880-5f32-11eb-9b49-2d00cd457696.png)
 
 `>`는 **자식 선택자**를 의미한다. 
 
 `공백 한 칸`은 **후손 선택자**
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%204.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/105680177-b8e5bf00-5f32-11eb-967a-3249570dace4.png)
 
 table태그의 자식으로 tbody라는 태그를 중간에 끼어 넣는다. 그러므로 자식 선택자를 이용하여 table>tbody 를 해주면 되나 브라우저마다 다르므로 table과 tr사이에 선택자를 골라주는데 후손 선택자로 설정 해줘야 한다. table의 후손 요소로 tr요소를 찾아가게 된다.
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%205.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/105680179-b8e5bf00-5f32-11eb-8b1d-9ba8b5fd7d7f.png)
 
 이런 형식으로 만들어보자
 
@@ -212,7 +212,7 @@ table태그의 자식으로 tbody라는 태그를 중간에 끼어 넣는다. �
 
 실행 결과>>
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%206.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%206.png)
+![7](https://user-images.githubusercontent.com/63957819/105680181-b97e5580-5f32-11eb-8389-4be853846030.png)
 
 **속성 선택자**
 
@@ -220,11 +220,11 @@ table태그의 자식으로 tbody라는 태그를 중간에 끼어 넣는다. �
 
 `선택자[속성=값]` : 특정한 속성 내부 값이 특정 값과 같은 태그 선택
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%207.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%207.png)
+![8](https://user-images.githubusercontent.com/63957819/105680185-ba16ec00-5f32-11eb-8bb6-fa19ae5e8573.png)
 
 → 로그인
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%208.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%208.png)
+![9](https://user-images.githubusercontent.com/63957819/105680186-ba16ec00-5f32-11eb-991c-0b3448c9d326.png)
 
 → 가입
 
@@ -257,7 +257,7 @@ input태그는 클로징 태그를 안 만들어도 된다.
 
 아이디 저장은 input요소의 바디가 아니고 형제인 거다. 아이디 저장이라는 내용을 선택자로 찾아갈 때 가장 좋은 방법은 label의 자식인 span요소로 찾아가는 게 좋다. 후손 선택자 사용
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%209.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%209.png)
+![10](https://user-images.githubusercontent.com/63957819/105680188-baaf8280-5f32-11eb-8452-48dbcd7ada4c.png)
 
 id라는 컬럼이 최대 다섯 자리로 설정되어 있다. 그래서 maxlength를 5로 설정
 
@@ -267,7 +267,7 @@ input:not해줄 경우, 인풋 요소들 중에서 type=text가 아닌 password,
 
 `E~F`는 바로 다음에 나오는 형제가 아니라도 형제 요소를 찾아주는 선택자
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%2010.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%2010.png)
+![11](https://user-images.githubusercontent.com/63957819/105680189-baaf8280-5f32-11eb-9a4f-820c70ad5a5d.png)
 
 - semanticcss.html
 
@@ -338,7 +338,7 @@ input:not해줄 경우, 인풋 요소들 중에서 type=text가 아닌 password,
 </html>
 ```
 
-![day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%2011.png](day03%20ff3277e2de4146d993a1f133fa7c2266/Untitled%2011.png)
+![12](https://user-images.githubusercontent.com/63957819/105680190-bb481900-5f32-11eb-8922-e3f0f0503022.png)
 
 **반응 선택자**
 
