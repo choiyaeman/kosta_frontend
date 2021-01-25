@@ -1,0 +1,64 @@
+<!--semantic.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>시멘틱태그-CSS</title>
+        <style>
+            * { color : #000000; 
+                /* font-size: 1.25em; */
+            }
+            header { background: #f6f5ef; margin: 5px auto;} 
+            section{background-color:#eef2f3; height:500px; margin-bottom: 5px;}
+            section>article.one{background-color: #b3ffd9}
+            section>article.two{background-color: #1e3932;color:white;}
+            footer{ background-color: #2C2A29;  color:#fff;  }
+            header, footer { height:100px; }
+            header>nav>ul{ list-style-type: none; padding: 0px; }
+            header>nav>ul>li {
+             width:100px; 
+             display: inline-block; 
+             margin: 0px 10px; 
+             text-align: center; 
+            }
+
+            header>nav>ul>li>a{
+                text-decoration: none;
+            }
+            header>nav>ul>li>a:hover{
+                background-color: black;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>스타벅스</h1>
+            <nav>
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="signup.html">가입</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section>
+            <article class="one">
+            스타벅스만의 특별한 혜택, 스타벅스 <mark>리워드</mark>
+스타벅스 회원이세요? 로그인을 통해 나만의 리워드를 확인해보세요.
+스타벅스 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.
+            </article>
+            <article class="two">
+                푸드 간편하지만 든든하게 채워지는 만족감을 느껴보세요. 신선함과 영양이 가득한 스타벅스 푸드가 완벽한 하루를 만들어 드립니다.
+            </article>
+            <aside>
+                나의 큐피트를 받아줘.
+                현대카드.
+            </aside>
+        </section>
+        <footer>
+            사업자등록번호 : 201-81-21515 (주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭 TEL : 1522-3232 개인정보 책임자 : 장석현
+ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.
+        </footer>        
+    </body>
+</html>

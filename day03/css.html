@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { background-color: cornsilk;}
+            /* div {border: 1px solid;} 모든 div요소에 스타일이 적용됨! */
+            #div2 {border: 1px solid;} /* id속성값이 div2인 요소를 선택해서 스타일 적용 */
+            p, li {color: red;} /* p요소와 li요소들을 선택해서 스타일 적용됨 */
+            .green {color: green} /* class속성값이 green인 요소들을 선택해서 스타일 적용 */
+            table tr>td {background-color: darkgray;} /* 후손선택자: 공백
+                                                            자식선택자: >
+                                                        */
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <p style="color: blue;"> <!-- 인라인 스탈이 내부 style보다 우선순위 높다-->
+                    단락1
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li style="color: blue">ONE</li>
+                    <li>TWO</li>
+                    <li>THREE</li>
+                </ul>
+            </div>
+            <div style="color:blue">
+
+            </div>
+        </div>
+        <div id="div2"> <!--id속성값은 중복되면 안됨!-->
+            <div>
+                <p class="green"> <!--class속성값은 중복가능!-->
+                    단락1
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li class="green">ONE</li>
+                    <li>TWO</li>
+                    <li class="green">THREE</li>
+                </ul>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>AAA</td>
+                        <td>BBB</td>
+                        <td>CCC</td>
+                    </tr>
+                    <tr>
+                        <td>DDD</td>
+                        <td>EEE</td>
+                        <td>FFF</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
