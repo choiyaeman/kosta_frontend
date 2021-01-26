@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div:first-child{
+                width: 100px; /* 내용의 넓이 */
+                height: 100px; /* 내용의 높이 */
+                padding: 10px; /* 테두리와 컨텐트의 간격 */
+                border: 1px black solid;
+                margin: 1px;
+            }
+            div:last-child{
+                box-sizing: border-box;
+                width: 100px; /* 실제 넓이 */
+                height: 100px; /* 실제 높이 */
+                padding: 10px;
+                border: 1px blue dotted;
+                margin: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            DIV1
+        </div>
+        <div>
+            DIV2
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            /*
+            :nth-child(1){
+                float : right;
+            }
+            :nth-child(2){
+                float : right;
+                clear : both; 
+            }
+            :nth-child(3){
+                float : left;
+            }
+            :nth-child(4){
+                float: right;
+            }
+            */
+            /* 절대 위치 지정 */
+            /*
+            div{
+                width: 100px;
+                height: 100px;
+            }
+            div.red{
+                position: absolute; 
+                left: 50px;
+                top: 70px;
+                z-index: 1;
+            }
+            div.green{
+                position: absolute; 
+                left: 70px;
+                top: 70px;
+                z-index: 4;
+            }
+            div.blue{
+                position: absolute; 
+                left: 90px;
+                top: 70px;
+                z-index: 3;
+            }
+            */
+            img {
+                width: 10px;
+                height: 10px;
+            }
+            div{
+                width: 100px; 
+                height: 100px;
+            }
+            div.red{
+                position: relative;
+                top: 70px;
+                left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/movie_image.jpg">
+        <br>
+        <img src="images/movie_image.jpg">
+        <div>
+            <div class="red" style="background:red">RED</div>
+            <div class="green" style="background:green">GREEN</div>
+            <div class="blue" style="background:blue">BLUE</div>  
+        </div>
+    </body>
+</html>

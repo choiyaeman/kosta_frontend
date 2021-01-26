@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                box-sizing: border-box;
+                width: 100px;
+                border: 1px solid;
+                margin: 5px;
+            }
+            div:nth-child(2n){ /* css에서는 1부터 시작 */
+               /*  display: none; */
+               visibility: hidden; /* 영역은 남아있고 화면에 안보이기만 한다 */
+            }
+            div:first-child{
+                display:inline; /* inline으로 바꾸게 되면 width가 효과가 없다 */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            DIV1
+        </div>
+        <div>
+            DIV2
+        </div>
+        <div>
+            DIV3
+        </div>
+        <div>
+            DIV4
+        </div>
+    </body>
+</html>
