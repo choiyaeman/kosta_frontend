@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        div{
+            border: 1px solid;
+        }
+        div.out{ /* class속성값이 out인 요소를 선택 */
+            width: 200px;
+            height: 200px;
+            /* line-height: 200px; */
+        }
+        div.in{ /* 블럭요소는 자신의 크기와 위치 지정 가능하다 */
+            width: 80px;
+            height: 80px;
+            margin: 60px auto; /* 상하마진으로 수직중앙정렬 
+                                  좌우마진 auto로 수평중앙정렬 */
+        }
+
+        div.out1{ /* 부모 */
+            width: 200px;
+            height: 200px;
+            text-align: center; /* 자식인라인요소의 수평정렬 */
+            line-height: 200px; /* height값과 동일하게 설정하면
+                                   자식인라인요소의 수직중앙정렬 */
+        }
+        span.in1{ /* 인라인요소는 자신의 크기와 위치지정 불가능하다. 
+                     크기는 내용에 따라 결정
+                     위치는 부모요소에 의해 결정*/
+            width: 80px; /* 효과없음 */
+            height: 80px; /* 효과없음 */
+            border: 1px solid;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="out"> <!--블럭요소-->
+            <div class="in">DIV1</div> <!--블럭요소-->
+        </div>
+        <div class="out1"> <!--블럭요소-->
+            <span class="in1">SPAN1</span> <!--인라인요소-->
+        </div>
+    </body>
+</html>

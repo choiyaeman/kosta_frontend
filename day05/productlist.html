@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>상품목록</title>
+        <style>
+            *{
+                box-sizing: border-box; /* width값이 전체 너비 */
+                padding: 0;
+                margin: 0;
+            }
+            div.productlist{
+                background-color: white;
+                width: 100%;
+                height: 600px;
+                /* margin: 10px; */
+                overflow: auto;
+            }
+            div.productlist>div.product{
+                width: 320px;
+                height: 400px;
+                border: 1px solid;
+                float: left;
+            }
+            div.productlist>div.product>ul{
+                list-style-type: none;
+                padding-left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="productlist">
+        <!-- 하나의 상품 -->
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0001.jpg" alt="나이트로 바닐라 크림"></li>
+                    <li>나이트로 바닐라 크림</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0002.jpg" alt="나이트로 콜드 브루"></li>
+                    <li>나이트로 콜드 브루</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0003.jpg" alt="돌체 콜드 브루"></li>
+                    <li>돌체 콜드 브루</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0004.jpg" alt="제주 비자림 콜드 브루"></li>
+                    <li>제주 비자림 콜드 브루</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0005.jpg" alt="콜드 브루 몰트"></li>
+                    <li>콜드 브루 몰트</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0006.jpg" alt="바닐라 크림 콜드 브루"></li>
+                    <li>바닐라 크림 콜드 브루</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <ul>
+                    <li><img src="./images/C0007.jpg" alt="콜드 브루 플로트"></li>
+                    <li>콜드 브루 플로트</li>
+                    <li>1,000</li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>주문내역</title>
+        <style>
+            div.vieworderlist{
+                box-sizing: border-box;
+                width: 100%;
+                height: 300px;
+            }
+            div.vieworderlist>table{
+                width: 50%;
+                height: 100%;
+                border-collapse: collapse;
+            }
+            div.vieworderlist>table, div.vieworderlist>table th, div.vieworderlist>table td{
+                border: 1px black solid;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="vieworderlist">
+            <h1>주문내역</h1>
+            <table>
+                <tr><th>주문번호</th>
+                    <th>주문일자</th>
+                    <th>상품번호</th>
+                    <th>상품명</th>
+                    <th>가격</th>
+                    <th>수량</th>
+                    <th>금액</th>
+                </tr>
+                <tr><td rowspan="2">15</td>
+                    <td rowspan="2">21/01/27</td>
+                    <td>C0003</td>
+                    <td>돌체 콜드 브루</td>
+                    <td>1,500</td>
+                    <td>1</td>
+                    <td>1,500</td>
+                </tr>
+                <tr><td>C0001</td>
+                    <td>나이트로 바닐라 크림</td>
+                    <td>1,000</td>
+                    <td>3</td>
+                    <td>3,000</td>
+                </tr>
+                <tr><td>10</td>
+                    <td>21/01/24</td>
+                    <td>C0001</td>
+                    <td>나이트로 바닐라 크림</td>
+                    <td>1,000</td>
+                    <td>1</td>
+                    <td>1,000</td>
+                </tr>
+                <tr><td rowspan="2">4</td>
+                    <td rowspan="2">21/01/10</td>
+                    <td>C0002</td>
+                    <td>나이트로 콜드 브루</td>
+                    <td>1,000</td>
+                    <td>1</td>
+                    <td>1,000</td>
+                </tr>
+                <tr><td>C0004</td>
+                    <td>제주 비자림 콜드 브루</td>
+                    <td>1,500</td>
+                    <td>2</td>
+                    <td>3,000</td>
+                </tr>
+                <tr><td>2</td>
+                    <td>21/01/10</td>
+                    <td>C0001</td>
+                    <td>나이트로 바닐라 크림</td>
+                    <td>1,000</td>
+                    <td>1</td>
+                    <td>1,000</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
