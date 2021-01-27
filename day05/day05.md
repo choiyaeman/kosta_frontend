@@ -59,7 +59,7 @@ margin 10px auto → 상하 10px 좌측 우측을 auto로 설정했다는 뜻
 
 실행결과 >
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/106005493-a2d52b80-60f7-11eb-9dc3-2f54c1ba9a2d.png)
 
 ---
 
@@ -156,7 +156,7 @@ width의 이미지를 100%하면 부모에 해당하는 100%가 되는 거다. �
 </html>
 ```
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled%201.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/106005498-a4065880-60f7-11eb-95ce-555151ebc62e.png)
 
 position을 relative로 설정하면 상대 위치로 지정하겠다는 의미를 한다. 자식이 absolute일 경우 left가 20px이면 부모 영역에서부터 20px이다. 부모 기준 절대 위치가 되는 거다. relative를 안주면 부모 기준이 아니라 브라우저 기준이 된다.
 
@@ -346,7 +346,7 @@ fixed라는 포지션을 쓰게 되면 스크롤이 움직여도 따라가지 �
 </html>
 ```
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled%202.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/106005505-a49eef00-60f7-11eb-925f-cda8ac317518.png)
 
 article 기사 두 개를 각각 float:left해주면 article이 붙여서 나온다. 그렇게 하면 안되고 동시에 합쳐진 상태로 왼쪽으로 가게 하려면 article 두 개를 포함하고 있는 영역을 만드는 게 좋다 
 
@@ -390,9 +390,9 @@ initial-scale=1 → 휴대폰에서 가장 최적화된 상태로 보여준다.
 
 2. display 속성을 inline-block으로 설정하면 된다.
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled%203.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/106005509-a5378580-60f7-11eb-94b1-ebfa6ff31efd.png)
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled%204.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/106005515-a668b280-60f7-11eb-8e55-c5c96acbbe88.png)
 
 singn in 검사해서 nav태그의 스타일을 보자 줄이게 되면 display:none이 되는 것을 볼 수 있다.
 
@@ -545,7 +545,7 @@ singn in 검사해서 nav태그의 스타일을 보자 줄이게 되면 display:
 </html>
 ```
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled%205.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/106005519-a7014900-60f7-11eb-9046-8a690dfd52fc.png)
 
 - viewcart.html
 
@@ -632,7 +632,7 @@ tr요소는 블럭 요소이다. 크기 지정이 가능하다. 자동 줄 바�
 
 그러므로 서버 쪽의 장바구니 내용을 갖고 주문하기 작업을 하면 된다.
 
-![day05%2074a7e086d4d24e799439c83c0c522784/Untitled%206.png](day05%2074a7e086d4d24e799439c83c0c522784/Untitled%206.png)
+![7](https://user-images.githubusercontent.com/63957819/106005525-a799df80-60f7-11eb-8948-2cba4e74ba69.png)
 
 - vieworder.html 내가 한 소스코드
 
