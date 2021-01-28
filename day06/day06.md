@@ -46,7 +46,7 @@
 
 실행결과>
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/106142909-67993200-61b5-11eb-96bb-87b154ee1de9.png)
 
 ---
 
@@ -106,11 +106,11 @@ id와 class 속성에 border가 적용되면 id 선택자와 class 선택자 중
 
 실행결과>
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%201.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/106142913-68ca5f00-61b5-11eb-9bbd-bc26a33586be.png)
 
 ---
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%202.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/106142915-6962f580-61b5-11eb-9a74-1cb73a900f36.png)
 
 - gridcss.html
 
@@ -157,7 +157,7 @@ id와 class 속성에 border가 적용되면 id 선택자와 class 선택자 중
 
 실행결과 >
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%203.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/106142917-6962f580-61b5-11eb-9647-22fc2d6e351e.png)
 
 ---
 
@@ -165,7 +165,7 @@ id와 class 속성에 border가 적용되면 id 선택자와 class 선택자 중
 
 자바스크립트는 데이터를 갖고 기능을 만드는 것이다. 렌더링 엔진하고 자바스크립터 해석기와 서로 커뮤니케이션을 한다. 
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%204.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/106142920-69fb8c00-61b5-11eb-81f0-227e644150a2.png)
 
 자바스크립터 구문은 스크립트 태그를 만나면 자바스크립터 해석기에게 일을 넘긴다
 
@@ -207,7 +207,7 @@ JS에서 문자열은 " " 또는 ' ' 이다. 변수는 var a;
 </html>
 ```
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%205.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/106142924-69fb8c00-61b5-11eb-8ff4-6027c8892269.png)
 
 검사에서 Console탭을 확인한다.
 
@@ -490,7 +490,7 @@ SQL에서..
 
 +는 문자열을 이어주는 역할도 한다.
 
-![day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%206.png](day06%20b242c237a1414c77bc7b796f27229c5e/Untitled%206.png)
+![7](https://user-images.githubusercontent.com/63957819/106142926-6a942280-61b5-11eb-9261-c6acd4514945.png)
 
 break는 가장 근접한 반복문을 빠져 나온다.
 
