@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //배열: 동일 자료형의 데이터 묶음
+            var arr = ['사과', '포도', '귤'];
+            console.log(arr[0]); //사과
+            console.log(arr.length); //3
+
+            arr = [];
+            arr[0] = '바나나';
+            console.log(arr[0]); //바나나
+            arr[1] = '파인애플';
+            console.log(arr[1]); //파인애플
+
+            console.log(arr.length); //2
+            arr.push("오렌지"); //끝에 요소 추가. push라는 메서드를 이용해 요소의 끝에 추가 할 수 있다.
+            console.log(arr[2]); //오렌지
+            console.log(arr.length); //3
+
+            var orange = arr.pop(); //끝의 요소제거.
+            console.log(orange); //오렌지
+            console.log(arr.length); //2
+
+            arr.unshift("키위"); //앞에 요소 추가
+
+            for(var i=0; i<arr.length; i++){
+                console.log(arr[i]);
+            }
+            var kiwi = arr.shift(); //앞에 요소 제거
+            for(var i=0; i<arr.length; i++){
+                console.log(arr[i]);
+            }
+
+            var position = arr.indexOf("파인애플"); // 파인애플 자리의 위치값을 반환
+            console.log(position); //1
+
+            position = arr.indexOf("수박");
+            console.log(position); //-1 -> 없는 요소에 대한 반환은 -1
+
+            //원본 : 바나나 파인애플
+            var spliceArr = arr.splice(0, 1); //특정 위치에 해당하는 요소제거. 0,1 ->첫번째 요소 하나만 제거
+            console.log(arr); //파인애플
+            console.log(spliceArr); //바나나
+
+            //반복처리
+            arr.forEach( function(element, index){
+                console.log(element + ":" + index);
+            } );
+
+            console.log("오름차순 정렬 : selection sort");
+            arr = [1, 6, 3, 2, 7, 4];
+            //오름차순하여 출력하시오 1 2 3 4 6 7
+            var temp;
+            for(var i=0; i<=arr.length; i++){
+                for(var j=i+1; j<=arr.length; j++){
+                    if(arr[j]<arr[i]){
+                        temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = temp;
+                    }
+                }
+            }
+
+            console.log("오름차순 정렬 결과");
+            arr.forEach( function(element, index){
+                console.log(element + ":" + index);
+            });
+        </script>
+    </head>
+</html>

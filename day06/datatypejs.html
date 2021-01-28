@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            console.log("javascript입니다.");
+            var a;
+            console.log(typeof a); //undefined -> 변수만 선언되어있고 값이 대입 되어있지 않은경우
+
+            a = 1;
+            console.log(typeof a); //number
+
+            a = 'hello';
+            console.log(typeof a); //string
+
+            a = true;
+            console.log(typeof a); //boolean
+
+            a = {};
+            console.log(typeof a); //object ->js에서 {}는 객체를 의미
+
+            a = function(){};
+            console.log(typeof a); //function
+        </script>
+    </head>
+</html>

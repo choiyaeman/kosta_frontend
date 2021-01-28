@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            for(var i=0; i<10; i++) {
+                console.log(i);
+            }
+            
+            var num = 0;
+            while(num < 10){
+                console.log(num);
+                num++;
+            }
+
+            num = 0;
+            do{
+                console.log(num);
+                num++;
+            } while(num < 10);
+
+            num = 10;
+            do{
+                console.log(num);
+                num++;
+            } while(num < 10);
+            console.log('*****3단~12단까지 구구단*****');
+            outfor: for(var dan = 3; dan<=12; dan++){
+                console.log("***" + dan + "***");
+                infor: for(var i=1; i<=9; i++) {
+                    //80이상의 값을 만나면 반복문 빠져나오기
+                    if(dan*i >= 80){
+                        //break; //가장 근접한 반복문을 빠져나오게 됨으로 80이상의 값을 만나게되면 단은 더 이상 출력되지 않는다.
+                        break outfor;
+                    }
+
+                    //24의 배수는 출력안함
+                    // if(dan*i % 24 != 0) { 
+                    //     console.log(dan*i);
+                    // }
+                    if(dan*i %24 == 0){
+                        continue; //조건 만족시 아래 구문(console.log(dan*i);)을 건너뛰기
+                    }
+                    console.log(dan*i);
+                }
+                console.log('****************');
+            }
+        </script>
+    </head>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--외부스타일-->
+        <link rel="stylesheet" href="./outer.css"> 
+
+        <!--내부스타일-->
+        <style> 
+            body{
+                background-color: pink;
+                color: green; 
+            }
+            body>div.divclass1{
+                border: 3px solid;
+            }
+            body>div.divclass2{
+                width: 200px;
+            }
+            #divid{
+                border: 10px dotted;
+            }
+        </style>
+        
+    </head>
+    <body style="background-color: lightgray;"> <!--인라인스타일-->  
+        CSS는 인라인, 외부, 내부스타일로 처리될 수 있다
+        우선순위를 갖는다.
+        <div id="divid" class="divclass1 divclass2">
+            DIV
+        </div>
+
+    </body>
+</html>
+
+
