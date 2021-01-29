@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //변수선언 방법 : var 변수이름
+            var a = 'global variable';
+            console.log("window.a=" + window.a); //gloabl variable
+            console.log("a=" + a); //global variable
+            if(true){
+                console.log("if블럭내부:" + a);
+                var b = "if블럭변수";
+            }
+            console.log(b);
+            for(var i=0; i<1; i++){
+                console.log("for블럭내부:" + a);
+                var c = "for블럭변수";
+            }
+            console.log(c);
+            console.log(i);
+
+
+            var d = function(param1){
+                console.log("function블럭내부:" + a);
+                var e = "function블럭변수"; //지역변수 function scope variable
+            }
+            d(10); //함수호출
+            //console.log(e); //error -> console.log(window.e);
+            //console.log(param1);
+            //----------------------------------------------------------------------------
+            // var f = function(param1, param2){
+            //     console.log("---");
+            //     var result = param1(param2); //함수 스콥에 저장된 result객체이다.
+            //     console.log("---");
+            //     return result;
+            // };
+
+            // var f1 = function(param1){
+            //     var f1scope = "f1스코프 변수";
+            //     return param1;
+            // };
+
+            // var f2 = function(){
+            //     console.log("f2함수: f1scope=" + f1scope);
+            //     console.log("반환함수 입니다.");
+            // };
+
+            // var result = f(f1, f2); //function scope variable하고 별개의 변수이다. window객체에 저장된 result객체이다.
+            // console.log(result);
+            // result();
+            //----------------------------------------------------------
+            var name = "최예만"; //window객체내에 선언
+            // var f11 = function(){
+            //     var f11scope = "f11스코프 변수";
+            //     var name = "콩쥐";
+            //     var f22 = function(){
+            //         console.log("f22함수: f11scope=" + f11scope);
+            //         console.log(name); //자기함수 밖에 가장 근접한 name변수가 사용된다.
+            //         console.log("반환함수입니다");
+            //     }
+            //     //f22();
+            //     return f22;
+            // };
+            // var f11result = f11();
+            // f11result();
+
+            var f11 = function(param) {
+                var name = "콩쥐";
+                console.log("in f11 name=" + name); //콩쥐
+                param();
+            }
+            // var arg = function(){
+            //     console.log(name); //최예만
+            // }
+            // f11(arg);
+            
+            f11(function(){
+                console.log(name); //최예만
+            });
+
+        </script>
+    </head>
+</html>

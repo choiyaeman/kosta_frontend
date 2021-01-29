@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //자료형변환
+            //숫자와 문자형 자동자료형변환
+            var num1 = 1;
+            var num2 = 2;
+            var str1 = '3'; var str2 = 'hello';
+            console.log(num1 + num2); //3
+            console.log(num1 + str1); //문자열결합연산자 + : 13
+                                      //숫자+문자는 서로 자료형이 일치하지않으므로 숫자가 문자로 자동 형 변환된것이다.
+            console.log(str1 + num1); //문자열결합연산자 + : 31
+                                      //문자+숫자는 서로 자료형이 일치하지않으므로 숫자가 문자로 자동 형 변환된것이다.
+
+            console.log(num1 - num2); //-1
+            console.log(num1 - str1); //산술연산자 - : 문자가 숫자로 자동형변환 : -2
+            console.log(str1 - num1); //2
+            console.log(str2 - num1); //hello는 숫자로 자동형변환안됨! : NaN
+
+            //숫자와 논리형 자동형변환
+            num1 = 1;
+            var bool1 = true;
+            console.log(num1 + bool1); //논리가 숫자로 자동형변환 true는 1, 
+                                      //                          false는 0으로 자동형변환 : 2
+            console.log(++bool1); //2
+
+            if( num1 < num2 ){ }
+            if( true ) { }
+            if( 1 ) { //숫자가 논리로 자동형변환 if(true)
+            }
+
+            //문자와 논리형 자동형변환
+            bool1 = true;
+            str1 = 'hello';
+            console.log(bool1 + str1); //문자열결합연산자 + : truehello
+                                       //논리가 문자로 자동형변환
+            console.log(bool1 - str1); //NaN
+
+            str1 = '3';
+            console.log(bool1 - str1); //-2
+
+            num1 = 1;
+            bool1 = true;
+            str1 = '3';
+            console.log(num1 - bool1 + str1); //'03'
+
+            num1 = 1;
+            str1 = '1';
+            bool1 = true;
+
+            console.log(num1 == str1); //값의 내용만 비교 : true
+            console.log(num1 === str1); //자료형과 내용을 모두 비교 : false
+            //--------------------------------------------------------------
+            //강제형변환
+            console.log(parseInt('123')); //문자->정수
+            console.log(parseFloat('123.4567')); //문자->실수
+            console.log(Number('123')); //정수, 실수 구분하지 않고 숫자형태로 변환
+            console.log(Number('123.4567'));
+
+            console.log(String(123)); //숫자->문자
+            console.log(Boolean(1)); //숫자->논리
+
+            console.log(String(true)); //논리->문자
+            console.log(Number(true)); //논리->숫자
+        </script>
+    </head>
+</html>

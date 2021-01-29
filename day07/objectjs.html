@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var customer1 = {
+                id: 'id1',
+                pwd: 'p1',
+                name: 'n1'
+            };
+            var customer2 = {
+                id: 'id2',
+                pwd: 'p2',
+                name: 'n2'
+            };
+            var p1 = {
+                no: 'C0001',
+                name : '나이트로 바닐라 크림',
+                price: 1000,
+                display: function() { //객체가 갖는 function을 메서드라 한다.
+                    console.log("상품 정보입니다.");
+                    console.log(this.no + ":" + this.name + ":" + this.price); //현재객체의 상품번호 C0001
+                }
+            };
+
+            console.log("첫 번째 고객의 이름" + customer1.name); //customer1객체의 name 속성
+            console.log("첫 번째 고객의 이름" + customer2.name);
+            p1.display(); //p1객체의 display메서드 호출
+
+            console.log(this); //window객체
+        </script>
+    </head>
+</html>

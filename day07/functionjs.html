@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <script>
+            //이름있는 함수
+            function test(param1, param2) {
+                console.log(param1 + ":" + param2);
+                if(typeof param2 == 'undefined'){
+                    console.log('두번째 매개변수가 지정되지 않았습니다. 0으로 강제 설정합니다.');
+                    param2 = 0;
+                    }
+                    return param1 + param2;
+                };
+
+                var result = test(1, 2); //1:2
+                console.log(result); //3
+
+                result = test(1);
+                console.log(result); //NaN, 1
+
+                result = test(1,2,3,4);
+                console.log(result); //3
+
+            function test2() {
+                console.log("test2함수가 호출 되었습니다.");
+            };
+
+            test2();
+
+            result = test2();
+            console.log(result); //undefined
+            //-------------------------------------------------------
+            //이름없는 함수. 익명함수
+            var a = function(param1,  param2){
+                console.log(param1 + ":" + param2);
+                return param1 + param2;
+            };
+
+            result = a(1, 2);
+            console.log(result); //3
+            
+            var b = a;
+            result = b(1, 2);
+            console.log(result); //3
+
+            var c = function(param1, param2, param3){
+               var result = param1(param2, param3);
+               //var result = 0;
+               //for(var i=0; i<10; i++){
+               //   result += param1(param2, param3);
+               //}
+               return result * 100;
+            };
+
+            result = c(a, 1, 2);
+            console.log(result);
+
+            result = c(function(param1,  param2){
+                        console.log(param1 + ":" + param2);
+                        return param1 + param2;
+                     }, 1, 2);
+            console.log(result); //300
+            </script>
+    </head>
+</html>
