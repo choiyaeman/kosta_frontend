@@ -163,7 +163,7 @@ var은 호이스팅이 된다. 변수 재선언이 가능하다. 그러므로 �
 
 bom이란 browser object model이라 한다. 웹 브라우저에서 쓰이는 창 하나 그 안에 들어가 있는 location, document, history 객체가 있다.
 
-- documnetjs.html
+- documentjs.html
 
 ```html
 <!DOCTYPE html>
