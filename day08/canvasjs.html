@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.
+    </canvas>
+        <script>
+            var c = document.querySelector("canvas");
+            var ctx = c.getContext("2d"); //2d영역얻기
+            ctx.moveTo(50,50); //moveTo(left, top); 시작점
+            ctx.lineTo(200,100); //lineTo(left, top); 끝점
+            ctx.strokeStyle = 'red';
+            ctx.stroke(); //선긋기
+
+            //사각형 그리기
+            ctx.beginPath();
+            var x = 200;
+            var y = 100;
+            var w = 50;
+            var h = 70;
+            //ctx.fillRect(x, y, w, h); //해당 컬러로 채워지는 사각형
+            ctx.strokeRect(x, y, w, h); //색이 채워지지않은 사각형
+
+            ctx.beginPath();
+            x += 100;
+            y = 85;
+            ctx.strokeRect(x, y, w, h);
+
+            //화면 지우기
+            ctx.beginPath();
+            ctx.clearRect(0, 0, 500, 500); // 캔버스의 크기만큼 다 지우자
+
+            //원 그리기
+            ctx.beginPath();
+            x = 100;
+            y = 250;
+            var radius = 50;
+            startAngle = 0; //시작각도
+           // endAngle = Math.PI; //끝각도. 라디안 표기법 Math.PI : 180도, Math.PI*2 : 360도
+            endAngle = Math.PI /2;
+            var antiClockwise = true; //시계반대방향
+            ctx.arc(x, y, radius, startAngle, endAngle, antiClockwise); // 0도 부터 시계반대 방향으로 90도까지 회전한것
+            ctx.stroke();
+            //ctx.fill();
+        </script>
+    </body>
+</html>

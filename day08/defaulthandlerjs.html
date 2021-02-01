@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body>
+        <div style="width: 400; height: 300px; border:1px solid;">
+            <a href="http://www.naver.com">네이버</a>
+        </div>
+        <form action="http://www.naver.com" method="get">
+            <input type="text" name="t"><br>
+            <input type="submit" value="전송">
+        </form>
+    <script>
+        var aObj = document.querySelector("div>a");
+        aObj.addEventListener("click", function(event){
+            //alert("a태그가 클릭 되었습니다");
+            aObj.style.backgroundColor = "yellow";
+            event.preventDefault(); //기본 이벤트 처리를 막는다.
+            event.stopPropagation(); //이벤트전파를 중지한다.
+        });
+
+        var divObj = document.querySelector("div");
+        divObj.addEventListener("click", function(){
+            divObj.style.backgroundColor = "pink";
+        });
+
+        var formObj = document.querySelector("form");
+        var btSubmitObj = document.querySelector("form>input[type=submit]");
+        formObj.addEventListener("submit", function(event) { //발생순서 : 2
+            //alert("form submit이벤트 발생");
+            event.preventDefault(); //기본 이벤트 처리를 막는다.
+
+        });
+
+        btSubmitObj.addEventListener("click", function() {
+            //alert("서브밋버튼 click이벤트 발생"); //발생순서 : 1
+        });
+    </script>
+    </body>
+</html>

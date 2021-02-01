@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <input type="text">
+        <input type="button">
+        <script>
+            var inputTextObj = document.querySelector("input[type=text]");
+            inputTextObj.addEventListener("focus", function(){
+                // inputTextObj.style.backgroundColor = 'yellow';
+                //this.style.backgroundColor = 'yellow'; //this는 콜백function을 포함하고있는 객체를 의미 -> inputTextObj
+                event.target.style.backgroundColor = 'yellow'; //event는 이벤트가 발생된 곳 즉 focus이벤트가 발생된 객체
+            });
+        </script>
+    </body>
+</html>

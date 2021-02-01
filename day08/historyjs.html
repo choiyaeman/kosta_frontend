@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>historyjs.html입니다.</h1>
+        <a href="#">뒤로</a>
+        <script>
+            var aObj = document.querySelector("a");
+            aObj.addEventListener("click", function(){
+                alert("뒤로가기가 클릭 되었습니다.");
+                history.go(-1);//back();과 같음
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            //C,JAVA언어: 변수는 선언후 사용한다.
+            //console.log(a); //Uncaught ReferenceError: a is not defined
+
+            //호이스팅
+            //JS: 변수사용코드보다 변수선언코드가 뒤에 나오면
+            //    변수선언코드를 자동 사용코드 앞으로 이동시킨다.
+            //var은 호이스팅 됨. let은 호이스팅 안됨
+            console.log(a); //undefined -> 선언만 되어있고 값이 대입x
+            var a = 1; //var로 변수를 선언하게되면 호이스팅이 된다.
+            //-->JS해석기에 의해 아래와 같이 바뀜
+            /*
+            var a;
+            console.log(a);
+            a = 1;
+            */
+            /*
+            console.log(b); //사용 Uncaught ReferenceError: Cannot access 'b' before initialization
+            let b = 1; //선언
+            */
+            //--------------------------------------
+            //변수 재선언 var은 재선언 됨, let은 재선언 안됨
+            var a = 'hello';
+            console.log(a);
+            /*
+            let b = 1;
+            let b = 'hello'; //Uncaught SyntaxError: Identifier 'b' has already been declared
+            */
+
+            //scope
+            var a = 'global variable';
+            let b = 'let variable';
+            console.log(a + ":" + window.a); //global variable:global variable
+            console.log(b + ":" + window.b); //let variable:undefined
+            var fa = function() {
+                var la = '지역변수 var';
+                let lb = '지역변수 let';
+                console.log(la + ":" +lb);
+                c = "지역변수 var없음"; //var없이 변수 사용하면 함수바깥 스코프에 자동 선언
+                console.log(c);
+            };
+            fa();
+           //console.log(la + ":" +lb); //Uncaught ReferenceError: la is not defined -> 함수 안에서 선언된 변수는 함수밖에서 사용x
+           console.log("out of fa(): " + c + ":" + window.c);
+
+        </script>
+    </head>
+</html>

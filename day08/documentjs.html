@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div>DIV1</div>
+            <input type="text" value="id1">
+            <ul>
+                <li>ONE</li>
+                <li>TWO</li>
+                <li>THREE</li>
+            </ul>
+
+            <script>
+                //DOM트리에 접근하려면 document객체가 필요
+                document.write("<h1>제목</h1>"); //DOM에 객체 추가
+                var divObj = document.querySelector("div");
+                console.log( divObj.innerHTML ); //DIV1
+
+                var inputObj = document.querySelector("input");
+                console.log(inputObj.innerHTML); //빈문자열. 아무효과없다
+                console.log( inputObj.value ); //기본값 or 사용자가 입력한 값
+
+                var ulObj = document.querySelector("ul");
+                console.log(ulObj.innerHTML); /*<li>ONE</li>
+                <li>TWO</li>
+                <li>THREE</li>*/
+                console.log(ulObj.innerText); /*ONE TWO THREE */
+                //------------------------------------------------
+                //기존객체에 하위객체추가
+                //1)하위객체생성, 2)기존객체에 하위객체로 추가
+                // let liObj = document.createElement("li"); //1)객체생성
+                // ulObj.appendChild(liObj);//2)기존객체에 하위객체로 추가
+
+                // let textObj = document.createTextNode("FOUR"); //1)객체생성
+                // liObj.appendChild(textObj);//2)기존객체에 하위객체로 추가
+
+                ulObj.innerHTML += "<li>FOUR</li>"; //ul객체의 바디내용에 li내용이 추가 되는 것
+
+                //하위객체 제거
+                //ulObj.removeChild(liObj);
+                let liOneObj = document.querySelector("ul>li:first-child");
+                console.log(liOneObj);
+                ulObj.removeChild(liOneObj);
+                
+            </script>
+            
+    </body>
+</html>

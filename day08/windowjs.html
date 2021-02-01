@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input class="popup" type="button" value="새창띄우기">
+        <input class="close" type="button" value="새창닫기">
+        <br>
+        <input class="interval" type="button" value="3초마다 콘솔 출력하기">
+        <input class="clearInterval" type="button" value="3초마다 콘솔 출력 중지">
+        <br>
+        <input class="timeout" type="button" value="10초후에 경고창 띄우기">
+        <input class="clearTimeout" type="button" value="타이머 중지">
+
+        <script>
+            //DOM트리에서 class속성값이 popup인 input객체 찾기
+            var btPopupObj = document.querySelector("input[class=popup]");
+
+            var w1;
+            //popup인 input객체가 클릭되었을때 새창띄우기
+            btPopupObj.addEventListener("click", function(){
+                var url = "./popupjs.html";
+                var target = "first"; //window창 이름. first타깃이라는 이름을 갖는 창은 한개
+                var feature = "width=300 height=300";
+                w1 = window.open(url, target, feature);
+            });
+
+            var btCloseObj = document.querySelector("input[class=close]");
+            btCloseObj.addEventListener("click", function(){
+                w1.close();
+            });
+
+            var btIntervalObj = document.querySelector("input[class=interval]");
+            btIntervalObj.addEventListener('click', function(){
+                intervalId = window.setInterval(function(){ //간격 설정하는 메서드
+                    console.log("오늘날짜" + new Date());
+                }, 3*1000); 
+            });
+
+            var btClearIntervalObj = document.querySelector("input[class=clearInterval]");
+            btClearIntervalObj.addEventListener('click', function(){
+                window.clearInterval(intervalId); //간격을 취소하는 메서드
+            });
+
+            var btTimeoutObj = document.querySelector("input[class=timeout]");
+            var timerId;
+            btTimeoutObj.addEventListener('click', function(){
+                //window.alert();
+                timerId = window.setTimeout(function(){
+                    window.alert("10초가 지났습니다.");
+                }, 10*1000);
+            });
+
+            var btClearTimeoutObj = document.querySelector("input[class=clearTimeout]");
+            btClearTimeoutObj.addEventListener('click', function(){
+                window.clearTimeout(timerId);
+            });
+
+        </script>
+    </body>
+</html>
