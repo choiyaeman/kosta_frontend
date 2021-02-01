@@ -1,6 +1,6 @@
 # day08
 
-![day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled.png](day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/106431113-21dbb280-64b0-11eb-910e-672b2345816d.png)
 
 체크 박스에서 클릭이벤트처리하겠다 의미는 체크 박스 선택 or 해제를 하겠다는 의미이다.
 
@@ -159,7 +159,7 @@ var은 호이스팅이 된다. 변수 재선언이 가능하다. 그러므로 �
 
 ---
 
-![day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%201.png](day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/106431118-230cdf80-64b0-11eb-9db4-752a1252f1fd.png)
 
 bom이란 browser object model이라 한다. 웹 브라우저에서 쓰이는 창 하나 그 안에 들어가 있는 location, document, history 객체가 있다.
 
@@ -381,14 +381,14 @@ submit버튼은 클릭 이벤트가 발생이 되면 거기서 끝나는 게 아
 </html>
 ```
 
-![day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%202.png](day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/106431119-23a57600-64b0-11eb-96e1-a880d8154189.png)
 
 시작 경로에서 부터 끝 경로까지 이어진 것을 path라 부른다 .
 
 또 다른 beginPath 만나면 강제 종료가 되고 새로운 선을 이어 간다.
 
-![day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%203.png](day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/106431122-23a57600-64b0-11eb-87fa-acc76b8a249c.png)
 
-![day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%204.png](day08%2007d8308e66d54903992bf0e510b6f2f8/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/106431124-23a57600-64b0-11eb-9d9c-ab8f0cd3d981.png)
 
 <input type="button">, <button type="button"> 둘 다 효과는 똑같은데 input type 버튼을 자바스크립트에서 객체를 찾는다면 document.querySelector("input[type=button]");로 선택자를 찾으면 되고 button은 선택자를 "button"로 찾는다. type을 생략한 버튼 태그로  button으로 객체 찾는 게 더 쉽게 찾을 수 있다.
