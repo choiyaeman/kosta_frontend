@@ -65,7 +65,7 @@ https: 프로토콜만 위치 정보 권한 허용 가능하다.
 </html>
 ```
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/106597864-59268e00-659a-11eb-8b61-788654dc9e55.png)
 
 Application에 Local Storage를 보면 id값이 저장되어있는 것을 볼 수 있다.
 
@@ -152,15 +152,15 @@ Dom트리가 완성 될 때까지 기다리다가 할 일을 해야 한다. body
 
 $("#id01") 하고 document.querySelectorAll("#id01")랑 같다.  jQuery에서 모든 요소를 찾는 방법인 $표현법이다. JQuery는 JS보다 사용법이 훨씬 단순하다는 장점이 있다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%201.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/106597871-5a57bb00-659a-11eb-819a-c0f316c253f2.png)
 
 jQuery에서는 innertHTML을 대신해 html로 사용한다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%202.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/106597873-5af05180-659a-11eb-8ee6-7a32ece3adf7.png)
 
 jQuery에서는 style에 관련된 대표 메서드가 hide(), show(), toggle() 제공된다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%203.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/106597874-5af05180-659a-11eb-950a-b9ba7da606de.png)
 
 style에 관련된 css라는 jQuery메서드를 사용해 문자열로 프로퍼티이름하고 값을 주면 된다.
 
@@ -174,21 +174,21 @@ CDN 호스트 연결하거나, jquery사이트에가서 다운 받고 다운된 
 
 `$(selector).action()` : $(객체이름) → $ 대신에 jQuery를 사용할 수 있다.  객체 이름을 쓸 때는 ""없이 쓰는 거다. 점을 찍고 jQuery용 메서드 사용한다. 점 연산자 다음부터는 제이쿼리 용 메서드가 호출 하는 거다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%204.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/106597877-5b88e800-659a-11eb-9e94-ff0410f7bf9f.png)
 
 문서가 준비되었을 때 그때서 콜백함수 내용이 처리가 된다. 그래서 $(document).ready(function(){}); 는 window.addEventListener("load", function(){}); 와 같다. 단 차이는 window에 로드 이벤트는 이미지나 동영상 같은 큰 메모리  처리, document의 로드 이벤트는 아주 큰 이미지 파일이 있을 경우에는 리소스가 준비되지 않을 수가 있다.
 
 &(document).ready 생략 가능 ==  &(function(){
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%205.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/106597879-5b88e800-659a-11eb-9f30-74c47982fb47.png)
 
 document.querySelectorAll("p") == $("p")   forEach라는 반복문 필요 없이 $("p").hid(); 하면 모든p요소를 찾아 사라지게 한다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%206.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%206.png)
+![7](https://user-images.githubusercontent.com/63957819/106597881-5c217e80-659a-11eb-9c19-f29b304fd5d0.png)
 
 제이쿼리에서는 이벤트용 메서드가 각각 제공이 된다.  ex) $("p").click();
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%207.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%207.png)
+![8](https://user-images.githubusercontent.com/63957819/106597885-5c217e80-659a-11eb-91a0-44229c528a3c.png)
 
 toggle메서드는 사라졌다 보여졌다 반복하는 작업을 한다. if~else를 대신 해준다.
 
@@ -196,7 +196,7 @@ Callback 함수란 메서드나 함수의 인자로 사용되는 함수라 한�
 
 1번이 정답. 이름 있는 함수는 a()는 함수의 인자로 콜백함수 이름만 적어주는 거다. 함수 호출 후에 인자로 전달 되는 게 아니다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%208.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%208.png)
+![9](https://user-images.githubusercontent.com/63957819/106597887-5cba1500-659a-11eb-8b9b-7c128aa7972b.png)
 
 아이디가 p1인 객체 찾기의 작업인데 css메서드를 적용해서 반환 값이 그 객체(p1) 한 객체를 이용해서 점을 이어가서 사용한다.
 
@@ -250,13 +250,13 @@ Callback 함수란 메서드나 함수의 인자로 사용되는 함수라 한�
 
 jquery 문법은 head태그에다 넣는다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%209.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%209.png)
+![10](https://user-images.githubusercontent.com/63957819/106597891-5d52ab80-659a-11eb-888b-e641177058d4.png)
 
 htmlinputelement는 일반 자바스크립트 객체 object는 제이쿼리용 객체이다.
 
 this객체란 input객체 각각을 의미한다. **$inputTextObj는 배열 형태이고 this는 배열에 들어있는 각 요소를 의미하므로 다르다.**
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2010.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2010.png)
+![11](https://user-images.githubusercontent.com/63957819/106597893-5d52ab80-659a-11eb-93bd-9078bbb65aca.png)
 
 두 번째 입력양식에는 값이 현재 없다. 왜냐하면 배열 타입이므로 첫 번째 배열 값이 보이는 거다. 현재 객체를 정확히 가리키는게 아니라 배열 전체 요소를 가리키게 되는 거다.  제이쿼리에서는 포커스 같은 이벤트 용 함수 앞에 객체의 형태가 배열 타입일 수 있다. 배열 객체 자체이기 때문에 val메서드를 호출하게 되면 배열 모든 값이 된다. 그러니깐 절대로 $inputTextObj.val() 표현법을 쓰면 안된다. focus함수명을 포함하고 있는 객체 명을 쓰면 안된다. 왜냐? 배열이라서 배열의 모든 정보를 다 갖고 있기 때문이다. 즉, **이벤트 용 콜백함수 안쪽에서는 이벤트 용 함수를 포함하고 있는 객체를 직접 사용하지 않는다.**
 
@@ -350,25 +350,25 @@ this객체란 input객체 각각을 의미한다. **$inputTextObj는 배열 형�
 
 ---
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2011.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2011.png)
+![12](https://user-images.githubusercontent.com/63957819/106597895-5deb4200-659a-11eb-9e75-fb44c999a669.png)
 
 jQuery메서드는 메서드 이름 하나를 가지고  set,get 역할을 한다.
 
 매개변수의 개수로 조작 매개변수 작은 것이 get역할, 큰 것이 set역할이다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2012.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2012.png)
+![13](https://user-images.githubusercontent.com/63957819/106597899-5deb4200-659a-11eb-9eb5-d4ada3952c85.png)
 
 html, val메서드 차이점은? 태그가 서로 다르다. 
 
 html, body메서드 차이점은 ? html()는 body내용 전체, text()는 body내용중에 text내용만 가져온다.
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2013.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2013.png)
+![14](https://user-images.githubusercontent.com/63957819/106597901-5e83d880-659a-11eb-862d-20502e1b812e.png)
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2014.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2014.png)
+![15](https://user-images.githubusercontent.com/63957819/106597904-5e83d880-659a-11eb-93da-d2e4bc96ec0e.png)
 
 `prepend()`는 앞에 `append()` 뒤에 추가한다는 뜻
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2015.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2015.png)
+![16](https://user-images.githubusercontent.com/63957819/106597906-5f1c6f00-659a-11eb-90e7-99b7fc7c2848.png)
 
 <>는 선택자가 아니라 객체를 하나 새로 만들라는 뜻이다.
 
@@ -382,7 +382,7 @@ html, body메서드 차이점은 ? html()는 body내용 전체, text()는 body�
 
 `css({"propertyname":"value","propertyname":"value",...});` : 객체 형태로 css메서드를 인자로 전달할 수 있다
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2016.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2016.png)
+![17](https://user-images.githubusercontent.com/63957819/106597908-5f1c6f00-659a-11eb-87c2-ad67bdf5abb5.png)
 
 jQuery Traversing에서 dom트리를 어떻게 찾아갈것인가?
 
@@ -444,7 +444,7 @@ first-child하고 jQuery의 first() 하고는 다르다
 
 실행결과>
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2017.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2017.png)
+![18](https://user-images.githubusercontent.com/63957819/106597910-5fb50580-659a-11eb-9b6a-1060323c4624.png)
 
 ---
 
@@ -485,7 +485,7 @@ eq와 nth-child는 서로 다르므로 주의~
 
 실행결과>
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2018.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2018.png)
+![19](https://user-images.githubusercontent.com/63957819/106597911-5fb50580-659a-11eb-90fa-19a4d38ed0b3.png)
 
 `not()` : 반대 개념이다.
 
@@ -493,4 +493,4 @@ eq와 nth-child는 서로 다르므로 주의~
 
 실습
 
-![day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2019.png](day09%201d8687832ade47e1be25db5b70e1d884/Untitled%2019.png)
+![20](https://user-images.githubusercontent.com/63957819/106597913-604d9c00-659a-11eb-86da-97532e0b5b91.png)
