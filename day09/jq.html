@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--jquery사용 CDN호스트 연결-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            //DOM트리 완성되고 화면에 보여줄 준비가 된 경우 :  document객체의 ready이벤트
+            //jQuery(document).ready(function(){ });
+            //$(document).ready(function(){ });
+            $(function(){ 
+                var $divObj = $("div"); //DOM트리에서 div객체들 모두 찾아 jquery전용객체로 반환. 일반 자바스크립트 객체가 아니고 제쿼리용 객체라고 $로 표현 해준거다.
+                $divObj.html("<h1>Hello</h1>"); // 내용 채우기. 자바스크립트의 innerHTML 표현과 같다
+
+                //자바스크립트 객체를 jquery전용객체로 변환 $(자바스크립트 객체)
+                /*var divObj = document.querySelector("div");
+                //divObj.html("<h1>HELLO</h1>");
+                $(divObj).html("<h1>HELLO</h1>");
+                */
+
+                // var divObj = document.querySelectorAll("div"); -> divObj. 하면 제공되는 메서드의 목록이 다르다. 그래서 제이쿼리의 객체를 알리려고 $를 써야한다.
+                // divObj.forEach(function(element){
+                //    element.innerHTML = "<h1>Hello</h1>";
+                //});
+
+                //DOM트리에서 type속성값이 text인 input객체들 찾기. 반복문을 안써도 포커스 이벤트 처리는되는 것을 볼 수 있다.
+                var $inputTextObj = $("input[type=text]"); // $inputTextObj는 jquery형태의 배열객체이다
+                $inputTextObj.focus(function(event){
+                    //alert("포커스를 받음");
+                    console.log("포커스를 받음 this:" + this); //this:[object HTMLInputElement]. 현재객체
+                    console.log("포커스를 받음 $(this):" + $(this)); //$(this):[object Object]. 자바스크립트 객체를 제이쿼리용 객체로 변환
+                    console.log("포커스를 받음 event.target:" + event.target); //event.target:[object HTMLInputElement]
+                    console.log("포커스를 받음 $inputTextObj:" + $inputTextObj); //$inputTextObj:[object Object] : 배열용 객체
+                    alert($(this).val() + ":" + $(event.target).val() + ":" + $inputTextObj.val()); //this.value랑 같다. jquery에서는 val메서드를 사용하면된다. $inputTextObj는 이미 제이쿼리용 객체이므로 ()안해도 된다.
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div></div>
+        <input type="text" value="첫번째 입력양식">
+        <input type="text">
+    </body>
+</html>
