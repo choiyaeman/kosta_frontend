@@ -538,7 +538,7 @@ Server시작해서 오류 있는지 check~
 
 실행결과>
 
-![16](https://user-images.githubusercontent.com/63957819/106774414-6f5d4880-6685-11eb-85ad-106fbbf42023.png)
+![16](https://user-images.githubusercontent.com/63957819/106775241-45585600-6686-11eb-8bd7-7fd94f8079b0.png)
 
 login, signup, productlist, viewcart 모두 보이는 것을 볼 수 있다.
 
@@ -546,11 +546,11 @@ login, signup, productlist, viewcart 모두 보이는 것을 볼 수 있다.
 
 title값은 head태그 안에 들어있는 값이 처리 되는 거지 section의 article안에 있는 title값이 처리 되는 게 아니다. 그러므로 vscode에서 주석 처리해주자~
 
-![18](https://user-images.githubusercontent.com/63957819/106774418-6ff5df00-6685-11eb-8996-f062beaf7804.png)
+![17](https://user-images.githubusercontent.com/63957819/106775242-45f0ec80-6686-11eb-8680-47ac14c7716f.png)
 
 로그인을 해서 응답 받는 결과란 결과는 두 개 밖에 없다. 로그인이 성공 되거나 실패 되거나 두 개로 나누어진다. /myfront/login이라는 페이지를 요청하게 되면 서버에 로그인이라는 url을 처리해줄 프로그램이 필요하다. 프로그램이 dv하고 일을 해줄 구문인데 프론트 단에서는 db하고 일을 해줄 url을 요청을 해서 응답만 받으면 된다. 요청 방식은 post방식, 응답 되는 내용은 응답 성공 시 응답 내용을 경고 창에 출력, 응답이 실패 된 경우에는 응답 오류 코드를 경고 창에 보여주자 
 
-![19](https://user-images.githubusercontent.com/63957819/106774421-708e7580-6685-11eb-8d51-46d710062a6d.png)
+![18](https://user-images.githubusercontent.com/63957819/106775244-46898300-6686-11eb-825d-b5844e08fd15.png)
 
 - LoginController.java
 
@@ -680,7 +680,7 @@ public class LoginController extends HttpServlet {
 
 실행결과>
 
-![20](https://user-images.githubusercontent.com/63957819/106774423-708e7580-6685-11eb-86b6-3239aa9a2bbe.png)
+![19](https://user-images.githubusercontent.com/63957819/106775245-46898300-6686-11eb-9de2-0a13ee7f45eb.png)
 
 ---
 
@@ -822,11 +822,11 @@ public class LoginController extends HttpServlet {
 
 실행결과>
 
-![21](https://user-images.githubusercontent.com/63957819/106774427-71270c00-6685-11eb-8d43-0c09a2852310.png)
+![20](https://user-images.githubusercontent.com/63957819/106775247-47221980-6686-11eb-9335-41baf1941332.png)
 
 ---
 
-![22](https://user-images.githubusercontent.com/63957819/106774429-71270c00-6685-11eb-846e-c5f4257b0961.png)
+![21](https://user-images.githubusercontent.com/63957819/106775248-47bab000-6686-11eb-8956-8a940c40c18f.png)
 
 상품 목록 페이지를 요청해서 응답 받는 내용이 상품 번호, 상품 이름, 가격...이 많은 텍스트들이 클라이언트에게 응답이 되면 분석을 해야 하는데 ,로 파싱을 하는데 복잡하다. 이런 것을 응답한 내용이 점점 많아질수록 구조화해서 즉 XML 형태로 응답해야 한다. 근데 하기가 어렵다. 그래서  
 
@@ -996,4 +996,4 @@ public class LoginController extends HttpServlet {
 
 실행결과>
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2021.png](day10%202b683c519a1947499514637df7023237/Untitled%2021.png)
+![22](https://user-images.githubusercontent.com/63957819/106775259-48ebdd00-6686-11eb-97e1-2f0fa5d2b5ef.png)
