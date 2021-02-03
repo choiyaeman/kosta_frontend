@@ -236,7 +236,7 @@ $("li"); : 선택자로 객체 찾기, $("<li>TEST</li>"); : 객체 생성
 </html>
 ```
 
-![day10%202b683c519a1947499514637df7023237/Untitled.png](day10%202b683c519a1947499514637df7023237/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/106774377-69fffe00-6685-11eb-8d29-843612944865.png)
 
 클라이언트가 요청하고 서버가 응답한다. 브라우저 내의 Networking을 통해 이루어지는 거다. 
 
@@ -248,7 +248,7 @@ DOM객체에 html메소드라든가 응답 된 내용을 보여주기 할 수 �
 
 기존 페이지를 다 지우지 않으려면 AJAX를 써야 한다. $를 이용해서 jQuery문법을 써야 한다.
 
-![day10%202b683c519a1947499514637df7023237/Untitled%201.png](day10%202b683c519a1947499514637df7023237/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/106774383-6b312b00-6685-11eb-9645-93ea0ec8c6e9.png)
 
 ajax를 이용하여 요청하고 응답을 받기 위해서 전제 조건으로는 서버로 구성이 되어 있어야 한다.
 
@@ -258,11 +258,11 @@ ajax를 이용하여 요청하고 응답을 받기 위해서 전제 조건으로
 
 ---
 
-![day10%202b683c519a1947499514637df7023237/Untitled%202.png](day10%202b683c519a1947499514637df7023237/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/106774385-6b312b00-6685-11eb-9cb5-4f908004db5f.png)
 
 웹 서버를 톰캣을 사용 할 거고 톰캣에 semanticcssjq.html, login.html을 서비스 한다면, 서버 아이피가 a.b.c.d 이고 포트 번호가 8888이라 하자 그럼 http://a.b.c.d:8888/myFront/semanticcssjq.html  여러 개의 프로젝트가 있다 가정하면 정확히 프로젝트 path이름을 적어줘야 한다. 요청하고 응답하면 기존 내용 지우고 응답 되었다. 자바스크립트의 xmlhttpRequest 내장 객체의 도움을 받아서 login.html요청해서 결과를 받는다.
 
-![day10%202b683c519a1947499514637df7023237/Untitled%203.png](day10%202b683c519a1947499514637df7023237/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/106774390-6bc9c180-6685-11eb-9d9b-ba57234dde2b.png)
 
 MyEE파일 새로 만들고 eclipse 경로로 지정 후 Window> preference에 들어가서 
 
@@ -270,43 +270,43 @@ General workspace → utf-8로 설정
 
 WEB에 css, html, jsp file → utf-8로 설정
 
-![day10%202b683c519a1947499514637df7023237/Untitled%204.png](day10%202b683c519a1947499514637df7023237/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/106774395-6bc9c180-6685-11eb-86da-807be270004c.png)
 
 경로는 bin을 포함하고 있는 path로 지정한다.
 
-![day10%202b683c519a1947499514637df7023237/Untitled%205.png](day10%202b683c519a1947499514637df7023237/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/106774396-6c625800-6685-11eb-91ba-895ac99ad52b.png)
 
 맨 밑에 시작되었습니다하면 성공한 것!!
 
-![day10%202b683c519a1947499514637df7023237/Untitled%206.png](day10%202b683c519a1947499514637df7023237/Untitled%206.png)
+![7](https://user-images.githubusercontent.com/63957819/106774397-6c625800-6685-11eb-876e-6f0ca1dd13d5.png)
 
 new> dynamic web project 이름 지정해주기
 
-![day10%202b683c519a1947499514637df7023237/Untitled%207.png](day10%202b683c519a1947499514637df7023237/Untitled%207.png)
+![8](https://user-images.githubusercontent.com/63957819/106774399-6cfaee80-6685-11eb-9fc2-fb8d5e144193.png)
 
-![day10%202b683c519a1947499514637df7023237/Untitled%208.png](day10%202b683c519a1947499514637df7023237/Untitled%208.png)
+![9](https://user-images.githubusercontent.com/63957819/106774400-6cfaee80-6685-11eb-9499-4f9bb38e1909.png)
 
 WebContent에 WebFrontEnd에서 이제까지 했던 파일들을 다 복사 붙여 넣기 하자~!
 
-![day10%202b683c519a1947499514637df7023237/Untitled%209.png](day10%202b683c519a1947499514637df7023237/Untitled%209.png)
+![10](https://user-images.githubusercontent.com/63957819/106774402-6d938500-6685-11eb-9652-58f9f4db58d8.png)
 
 Server에 오른쪽 클릭 >Add and remove
 
 왼쪽은 eclipse프로젝트, 오른쪽은 tomcat서버에 배포하겠다는 뜻
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2010.png](day10%202b683c519a1947499514637df7023237/Untitled%2010.png)
+![11](https://user-images.githubusercontent.com/63957819/106774403-6d938500-6685-11eb-9586-1c1249eebe9e.png)
 
 Server시작해서 오류 있는지 check~
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2011.png](day10%202b683c519a1947499514637df7023237/Untitled%2011.png)
+![12](https://user-images.githubusercontent.com/63957819/106774406-6e2c1b80-6685-11eb-941f-e8176688edf3.png)
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2012.png](day10%202b683c519a1947499514637df7023237/Untitled%2012.png)
+![13](https://user-images.githubusercontent.com/63957819/106774407-6e2c1b80-6685-11eb-9954-125cd9e88f6b.png)
 
-[http://localhost:8888/myfront/semanticcssjq.html](http://localhost:8888/myfront/semanticcssjq.html) 접속해보자
+![14](https://user-images.githubusercontent.com/63957819/106774410-6ec4b200-6685-11eb-8de6-19c692bd9696.png)
 
 한글 깨짐은 meta태그에 encoding을 utf-8로 설정 해주면 된다. → <meta charset="UTF-8">
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2013.png](day10%202b683c519a1947499514637df7023237/Untitled%2013.png)
+![15](https://user-images.githubusercontent.com/63957819/106774411-6f5d4880-6685-11eb-984c-fc41a41e8685.png)
 
 중복됨으로 myFrontWeb 파일을 과감히 지우고 eclipse에서 쓰일 디렉토리만 남겨두자! MyEE workspace 안쪽에서 관리하자~
 
@@ -538,19 +538,19 @@ Server시작해서 오류 있는지 check~
 
 실행결과>
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2014.png](day10%202b683c519a1947499514637df7023237/Untitled%2014.png)
+![16](https://user-images.githubusercontent.com/63957819/106774414-6f5d4880-6685-11eb-85ad-106fbbf42023.png)
 
 login, signup, productlist, viewcart 모두 보이는 것을 볼 수 있다.
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2015.png](day10%202b683c519a1947499514637df7023237/Untitled%2015.png)
+![17](https://user-images.githubusercontent.com/63957819/106774416-6ff5df00-6685-11eb-8f8d-58cc9e789f54.png)
 
 title값은 head태그 안에 들어있는 값이 처리 되는 거지 section의 article안에 있는 title값이 처리 되는 게 아니다. 그러므로 vscode에서 주석 처리해주자~
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2016.png](day10%202b683c519a1947499514637df7023237/Untitled%2016.png)
+![18](https://user-images.githubusercontent.com/63957819/106774418-6ff5df00-6685-11eb-8996-f062beaf7804.png)
 
 로그인을 해서 응답 받는 결과란 결과는 두 개 밖에 없다. 로그인이 성공 되거나 실패 되거나 두 개로 나누어진다. /myfront/login이라는 페이지를 요청하게 되면 서버에 로그인이라는 url을 처리해줄 프로그램이 필요하다. 프로그램이 dv하고 일을 해줄 구문인데 프론트 단에서는 db하고 일을 해줄 url을 요청을 해서 응답만 받으면 된다. 요청 방식은 post방식, 응답 되는 내용은 응답 성공 시 응답 내용을 경고 창에 출력, 응답이 실패 된 경우에는 응답 오류 코드를 경고 창에 보여주자 
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2017.png](day10%202b683c519a1947499514637df7023237/Untitled%2017.png)
+![19](https://user-images.githubusercontent.com/63957819/106774421-708e7580-6685-11eb-8d51-46d710062a6d.png)
 
 - LoginController.java
 
@@ -680,7 +680,7 @@ public class LoginController extends HttpServlet {
 
 실행결과>
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2018.png](day10%202b683c519a1947499514637df7023237/Untitled%2018.png)
+![20](https://user-images.githubusercontent.com/63957819/106774423-708e7580-6685-11eb-86b6-3239aa9a2bbe.png)
 
 ---
 
@@ -822,11 +822,11 @@ public class LoginController extends HttpServlet {
 
 실행결과>
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2019.png](day10%202b683c519a1947499514637df7023237/Untitled%2019.png)
+![21](https://user-images.githubusercontent.com/63957819/106774427-71270c00-6685-11eb-8d43-0c09a2852310.png)
 
 ---
 
-![day10%202b683c519a1947499514637df7023237/Untitled%2020.png](day10%202b683c519a1947499514637df7023237/Untitled%2020.png)
+![22](https://user-images.githubusercontent.com/63957819/106774429-71270c00-6685-11eb-846e-c5f4257b0961.png)
 
 상품 목록 페이지를 요청해서 응답 받는 내용이 상품 번호, 상품 이름, 가격...이 많은 텍스트들이 클라이언트에게 응답이 되면 분석을 해야 하는데 ,로 파싱을 하는데 복잡하다. 이런 것을 응답한 내용이 점점 많아질수록 구조화해서 즉 XML 형태로 응답해야 한다. 근데 하기가 어렵다. 그래서  
 
